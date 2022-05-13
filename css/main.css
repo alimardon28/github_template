@@ -1,23 +1,74 @@
-.user{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    cursor: pointer;
+.row > * {
+  padding: 0;
 }
 
-.card{
-    cursor: pointer;
-    transition:all 0.2s ease ;
+.body {
+  background-color: #0d1117;
 }
 
-.card:hover{
-    background-color: rgba(0, 0, 0, 0.003);
-}
-.card_wrapper{
-    position: relative;
-    left: -5rem;
+.navbar {
+  background-color: #161b22;
 }
 
-.spennerS{
-    display: none;
+.dropdowns {
+  background-color: #0d1117;
+  color: #fff !important;
+}
+
+/* #161B22  */
+
+.user {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.github_box {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.box {
+  box-shadow: 1px 1px 1px 2px #414141;
+}
+
+.navbar__iconsgithub {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.003);
+}
+.card_wrapper {
+  position: relative;
+  left: -5rem;
+}
+
+.spennerS {
+  display: none;
+}
+
+#searchBox {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.notFount {
+  margin: 0;
+  padding: 0;
+}
+
+.notFount > img {
+  height: 550px;
 }

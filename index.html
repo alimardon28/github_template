@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/githubIcons.png" />
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -11,36 +12,40 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>GitHub</title>
   </head>
-  <body class="bg-light">
+  <body class="body">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <nav class="navbar navbar-light bg-dark">
+          <nav class="navbar py-2 navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand fw-fold text-white">Github</a>
+              <div class="github_box">
+                <img
+                  class="navbar__iconsgithub"
+                  src="./images/githubIcons.png"
+                  alt=""
+                />
+                <a class="navbar-brand fw-fold text-white"> Github</a>
+              </div>
               <div class="d-flex">
                 <input
                   autocomplete="off"
-                  class="form-control me-2"
+                  class="form-control me-2 bg-dark"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                   id="searchBox"
                 />
-                <button id="submit" class="btn btn-outline-light" type="btns">
-                  Search
-                </button>
               </div>
             </div>
           </nav>
         </div>
       </div>
       <div class="row">
-        <div class="col-3 bg-white">
-          <div class="flex-shrink-0 p-3 bg-light" style="width: 280px">
+        <div class="col-3">
+          <div class="flex-shrink-0 p-3 dropdowns" style="width: 280px">
             <a
               href="/"
-              class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"
+              class="d-flex align-items-center pb-3 mb-3 link-light text-decoration-none border-bottom"
             >
               <svg class="bi me-2" width="30" height="24">
                 <use xlink:href="#bootstrap"></use>
@@ -50,7 +55,7 @@
             <ul class="list-unstyled ps-0">
               <li class="mb-1">
                 <button
-                  class="btn btn-toggle align-items-center rounded"
+                  class="btn btn-toggle align-items-center text-light rounded"
                   data-bs-toggle="collapse"
                   data-bs-target="#home-collapse"
                   aria-expanded="true"
@@ -59,15 +64,15 @@
                 </button>
                 <div class="collapse show" id="home-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Overview</a></li>
-                    <li><a href="#" class="link-dark rounded">Updates</a></li>
-                    <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    <li><a href="#" class="link-light rounded">Overview</a></li>
+                    <li><a href="#" class="link-light rounded">Updates</a></li>
+                    <li><a href="#" class="link-light rounded">Reports</a></li>
                   </ul>
                 </div>
               </li>
               <li class="mb-1">
                 <button
-                  class="btn btn-toggle align-items-center rounded collapsed"
+                  class="btn btn-toggle align-items-center rounded text-light collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target="#dashboard-collapse"
                   aria-expanded="false"
@@ -76,16 +81,16 @@
                 </button>
                 <div class="collapse" id="dashboard-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Overview</a></li>
-                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                    <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    <li><a href="#" class="link-light rounded">Overview</a></li>
+                    <li><a href="#" class="link-light rounded">Weekly</a></li>
+                    <li><a href="#" class="link-light rounded">Monthly</a></li>
+                    <li><a href="#" class="link-light rounded">Annually</a></li>
                   </ul>
                 </div>
               </li>
               <li class="mb-1">
                 <button
-                  class="btn btn-toggle align-items-center rounded collapsed"
+                  class="btn btn-toggle align-items-center rounded text-light collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target="#orders-collapse"
                   aria-expanded="false"
@@ -94,17 +99,19 @@
                 </button>
                 <div class="collapse" id="orders-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">New</a></li>
-                    <li><a href="#" class="link-dark rounded">Processed</a></li>
-                    <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                    <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    <li><a href="#" class="link-light rounded">New</a></li>
+                    <li>
+                      <a href="#" class="link-light rounded">Processed</a>
+                    </li>
+                    <li><a href="#" class="link-light rounded">Shipped</a></li>
+                    <li><a href="#" class="link-light rounded">Returned</a></li>
                   </ul>
                 </div>
               </li>
               <li class="border-top my-3"></li>
               <li class="mb-1">
                 <button
-                  class="btn btn-toggle align-items-center rounded collapsed"
+                  class="btn btn-toggle align-items-center rounded text-light collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target="#account-collapse"
                   aria-expanded="false"
@@ -113,10 +120,10 @@
                 </button>
                 <div class="collapse" id="account-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">New...</a></li>
-                    <li><a href="#" class="link-dark rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark rounded">Settings</a></li>
-                    <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                    <li><a href="#" class="link-light rounded">New...</a></li>
+                    <li><a href="#" class="link-light rounded">Profile</a></li>
+                    <li><a href="#" class="link-light rounded">Settings</a></li>
+                    <li><a href="#" class="link-light rounded">Sign out</a></li>
                   </ul>
                 </div>
               </li>
@@ -124,12 +131,14 @@
           </div>
         </div>
         <div class="col-9 p-2 mt-2 card_wrapper">
-            <div class="alert alert-info">NOT FOUND</div>
-            <div class="spennerS">
-                <div class="spinner-grow mx-auto" role="status">
-                    <span class="visually-hidden"></span>
-                  </div>
+          <div class="notFount">
+            <img class="w-100" src="./images/github-404.png" alt="" />
+          </div>
+          <div class="bg-darck spennerS">
+            <div class="bg-light spinner-grow mx-auto" role="status">
+              <span class="visually-hidden hidden"></span>
             </div>
+          </div>
           <!-- <div
             class="bg-white p-3 d-flex flex-row align-items-center w-100 mt-2 justify-content-between"
           >
