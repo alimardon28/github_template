@@ -72,3 +72,9 @@
 .notFount > img {
   height: 550px;
 }
+
+.img{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
