@@ -1,5 +1,6 @@
 .row > * {
   padding: 0;
+  width: 100%;
 }
 
 .body {
@@ -44,15 +45,12 @@
 .card {
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 40%;
 }
 
-.card:hover {
+/* .card:hover {
   background-color: rgba(0, 0, 0, 0.003);
-}
-.card_wrapper {
-  position: relative;
-  left: -5rem;
-}
+} */
 
 .spennerS {
   display: none;
@@ -71,10 +69,30 @@
 
 .notFount > img {
   height: 550px;
+  width: 100%;
 }
 
-.img{
-  width: 125px;
-  height: 125px;
+.img {
+  width: 305px;
+  height: 305px;
   border-radius: 50%;
+  border: 2px solid #414141;
+  margin-top: 50px;
 }
+
+.avatar {
+  margin-right: 30px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.repo__list {
+  border-bottom: 1px solid #30343a;
+}
+/*
+.notFount{
+
+} */
